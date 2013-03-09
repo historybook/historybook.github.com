@@ -9,7 +9,7 @@ subpole=x.getElementsByTagName("img");
 document.getElementById("popis").innerHTML=x.getElementsByTagName("div")[0].innerHTML;
 document.getElementById("avatar").src =subpole[0].src;
 for(i=1;i<subpole.length;i++)
-{obrazky=array();
+{obrazky=Array();
 obrazky.push(subpole[i]);
 }
 if (subpole<2){document.getElementById("obrazok").src="http://historybook.github.com/bez.png";
