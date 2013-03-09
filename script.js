@@ -1,5 +1,5 @@
 /*JAVASCRIPT*/
-obrazky=array();//aktuálne odkazy
+obrazky=Array();//aktuálne odkazy
 last=null;//posledný- oznacenie
 $.ready=function(){
 pole=document.getElementsByTagName("section");
