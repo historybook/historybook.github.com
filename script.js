@@ -50,7 +50,7 @@ document.getElementById("2").style.backgroundColor="rgba(0,0,0,0.7)";
 
 document.getElementById("right").onclick=document.getElementById("left").onclick=function(){
 	var x =this==document.getElementById("right") ? "-":"+";
-	position=parseInt(document.getElementById("move").style.marginLeft);
+	position=parseInt($(document.getElementById("move")).css(margin-left));
 	if(x=="+" && position==0 ){document.getElementById("move").style.marginLeft="-2712px";}
 	else if(x=="-" && position==-2712 ){document.getElementById("move").style.marginLeft="0px";}
 	else if(x=="+"){document.getElementById("move").style.marginLeft=(position+904)+"px";}
