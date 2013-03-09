@@ -13,7 +13,7 @@ for(i=1;i<subpole.length;i++)
 obrazky.push(subpole[i]);
 }
 if (subpole<2){document.getElementById("obrazok").src="http://historybook.github.com/bez.png";}
-elseif(subpole<3){
+else if(subpole<3){
 					document.getElementById("1").style.display="none";
 					document.getElementById("2").style.display="none";
 					document.getElementById("obrazok").src=obrazky[1];}
