@@ -6,8 +6,8 @@ pole=document.getElementsByTagName("section");
 for (i=0;i<pole.length;i++)
 {y=pole[i].onclick=function(event){if(this==window){x=pole[0]}else{x=this;}
 subpole=x.getElementsByTagName("img");
-document.getElementBzId("popis").innerHTML=x.getElementsByTagName("div")[0].innerHTML;
-document.getElementBzId("avatar").src =subpole[0].src;
+document.getElementById("popis").innerHTML=x.getElementsByTagName("div")[0].innerHTML;
+document.getElementById("avatar").src =subpole[0].src;
 for(i=1;i<subpole.length;i++)
 {obrazky=array();
 obrazky.push(subpole[i]);
