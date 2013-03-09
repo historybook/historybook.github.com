@@ -8,7 +8,7 @@ for (i=0;i<pole.length;i++)
 subpole=x.getElementsByTagName("img");
 document.getElementById("popis").innerHTML=x.getElementsByTagName("div")[0].innerHTML;
 document.getElementById("avatar").src =subpole[0].src;
-for(i=1;i<subpole.length;i++)
+for(y=1;y<subpole.length;y++)
 {obrazky=Array();
 obrazky.push(subpole[i]);
 }
