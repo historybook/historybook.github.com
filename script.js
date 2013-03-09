@@ -4,7 +4,7 @@ last=null;//posledný- oznacenie
 $(document).ready(function(){
 pole=document.getElementsByTagName("section");
 for (i=0;i<pole.length;i++)
-{y=pole[i].onclick=function(event){if(this==document){x=ole[0]}else{x=this;}
+{y=pole[i].onclick=function(event){if(this==document){x=pole[0]}else{x=this;}
 subpole=x.getElementsByTagName("img");
 document.getElementBzId("popis").innerHTML=x.getElementsByTagName("div")[0].innerHTML;
 document.getElementBzId("avatar").src =subpole[0].src;
