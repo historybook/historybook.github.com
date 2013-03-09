@@ -1,0 +1,435 @@
+<DOCTYPE html!>
+<html>
+  <head>
+    <title>
+      Vitajte na stránke Historybook-ov slávnych osobností
+    </title>
+    <style>
+      body{margin:0;padding:0;
+          background: #957544 url("http://historybook.github.com/back.jpg")  center -3px no-repeat;}
+      .block{width:887px;
+            cackground-color:rgba(0,0,0,0.5);
+            
+            margin:0 auto;
+            padding:12px 127px 50px 207px;
+            position:relative;
+          
+            
+            }
+      .imagebox{box-shadow:0 0 80px black;display:block;position:relative;z-index:9;border-radius:0px 10px 0 0;}
+      .imagebox img{max-width:100%;border-radius:0px 10px 0 0;}
+       .avatar{position:absolute;
+                width:207px;
+                left:0px;
+                z-index:10;
+       }
+      .flak{
+                    display:block;
+                    height:200px;
+                    width:200px;
+                    position: absolute;
+                    top:-140px;
+                    left:-100px;
+                    background-image:url("http://historybook.github.com/flak1.png");
+                    z-index:1;
+                    }
+       
+       .imagebox +div,.fixed + div{position:relative;}
+       .avatar div:first-child{padding:20px 27px;background-color:rgba(0,0,0,0.5);border-radius:10px 0 0 0;}
+       .avatar div.x {height:0;width:0px;
+                      border-bottom: 150px solid transparent;
+                      border-right:207px solid rgba(0,0,0,0.5);  }
+        #popis{background-color:rgba(0,0,0,0.6);
+                padding:10px;
+                color:white;
+                text-align:justify;
+                font-family:Arial;
+                text-transform:uppercase;
+                font-size:12px;
+                font-weight:bold;
+                margin-top:13px;
+                position:relative;
+                -moz-text-align-last:center;
+                text-align-last:center;
+                z-index:13;
+                }
+          
+        
+    
+      .fixed{position:relative;
+            width:888px;
+            z-index:111;
+            height:90px;
+            margin-top:20px;
+            font-size:0;
+            overflow:hidden;
+            padding:10px;
+            margin-left:-10px;
+            } 
+     .fixed >div{width:3547px;margin-left:-904}
+      h2{margin:1px 5px;text-transform:uppercase;font-size:14px}
+      section #hore{display:none}
+      section ul{padding-left:30;margin:0;font-style:italic;list-style-type:square;font-size:0px;padding:0 3px 0 22px;}
+      section ul li:nth-child(2),section ul li:nth-child(1){display:none}
+      section ul li{font-size:13px}
+      section {width:210px;
+                font-family:sans-serif;
+                display:inline-block;
+                height:90px;
+                background-color:rgba(255,255,255,0.6);
+                overflow:hidden;margin-right:16px;
+                cursor:pointer;
+                box-shadow:0 0 10px rgba(0,0,0,1);
+                transition: width 1s linear 2s;
+/* Firefox 4 */
+-moz-transition:color 0.3s linear, background-color 0.5s  ;
+/* Safari and Chrome */
+-webkit-transition:color 0.3s linear, background-color 0.5s ;
+/* Opera */
+-o-transition:color 0.3s linear, background-color 0.5s  ;
+                }
+       #left{height:90px;width:44px;position:absolute;top:-100px;left:-60px;background-image:url("http://historybook.github.com/sipky.png");cursor:pointer}
+       
+       #right{height:91px;width:44px;position:absolute;top:-100px;left:903px;background-image:url("http://historybook.github.com/sipky.png");background-position:-44px 0;cursor:pointer}
+        #left:hover{background-position:0px 90px;}
+        #right:hover{background-position:-44px 93px;}
+        section:hover {
+                background-color:rgba(0,0,0,0.6);
+                color:white;
+                box-shadow:0 0 10px rgba(255,255,255,1);
+                
+                }
+        .gulicka1,.gulicka2{position:absolute; height:40px; width:40px; background-color:rgba(255,255,255,0.7);border-radius:20px;bottom: 30px;left:380px;cursor:pointer}
+        .gulicka2{background-color:rgba(0,0,0,0.7);bottom: 30px;left:440px}
+        .gulicka1:hover{background-color:rgba(140,140,140,0.7);}
+        .gulicka2:hover{background-color:rgba(140,140,140,0.7);}
+      
+    </style>
+<script src="script.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  </head>
+  <body>
+    <div class="block">
+    <div class="avatar">
+      <div>
+        <img id="avatar" src="http://historybook.github.com/avatar.jpg">
+      </div>
+      <div class="x">        
+      </div>
+      
+    </div>
+    <div  class="imagebox"><img src="http://historybook.github.com/example.jpg">
+    <div id="1"class="gulicka1"></div>
+    <div id="2" class="gulicka2"></div>
+      
+    </div> 
+    <div><div class="flak"></div></div>
+    <div id="popis">
+      Michal Bosák  je známy slovenský bankár, ktorého podpis sa nachádzal na amerických 5, 10 a 20 dolárových bankovkách, ktoré boli vydané 25. júna 1907. Otvoril súkromnú banku, MICHAL BOSAK PRIVATE BANK, Americko-slovenskú banku, ktorá sídlila v Bratislave, agentúru lodných spoločností a pomohol organizovať FIRST NATIONAL BANK v Olyphante. Jeho podpis je na známej Pittsburghskej dohode, ktorá bola základom pre vznik Československa. V roku 1976 bol zaradený medzi štrnásť najvýznamnejších Slovákov v amerických dejinách.
+    </div>
+    <div class="fixed"><div>
+    <section>
+  <h2>
+    Ján Bahýľ
+  </h2>
+  <ul>
+    <li>
+      * 18. 10. 2012 - Zvolenská Slatina
+    </li>
+    <li>
+      † 21. 1.  2050
+    </li>
+    <li>
+      Povolanie: vynálezca
+    </li>
+    <li>
+      Zostrojil parný tank, balón so vzdušnou turbínou 
+    </li>
+  </ul>
+  
+  <div id="hore">
+  
+  Ján Bahýľ je známy slovenský vynálezca, ktorý skonštruoval stroje pre vojenský a strojárensky priemysel. Skonštruoval a patentoval vrtuľník, ale nemal ho kto financovať, tak mu prvenstvo nebolo pripísané. Ján Bahýľ sa Zaoberal hydraulikou a zostrojil parný tank, ktorý odkúpila ruská armáda a zostrojil aj balón so vzdušnou turbínou. Ján s Antonom Marschallom zostrojili prvý automobil s benzínovým pohonom na Slovensku.
+  </div>
+  </section>
+  <section>
+  <h2>
+    Štefan Banič
+  </h2>
+  <ul>
+    <li>
+      * 18. 10. 2012 - Zvolenská Slatina
+    </li>
+    <li>
+      † 21. 1.  2050
+    </li>
+    <li>
+      Povolanie: vynálezca
+    </li>
+    <li>
+      Zostrojil vlastnú padákovú konštrukciu
+    </li>
+  </ul>
+  <div id="hore">
+  Štefan Banič je známy slovenský vynálezca preslávený vlastnou padákovou konštrukciou, ktorú osobne vyskúšal zoskočením z 15-poschodovej budovy. V roku 1914 Banič predložil svoj vynález zástupcom amerického vojenského letectva, ktorí ho odkúpili, ale nezaviedli. Na Slovensku sa venoval ovocinárstvu a objavil ložisko barytu.
+  </div>
+  </section>
+  <section>
+  <h2>
+    Matej Bel
+  </h2>
+  <ul>
+    <li>
+      * 18. 10. 2012 - Zvolenská Slatina
+    </li>
+    <li>
+      † 21. 1.  2050
+    </li>
+    <li>
+      Povolanie: slovenský polihystor
+    </li>
+    <li>
+      Vydal <em>Posol starého a nového Uhorska</em> 
+    </li>
+  </ul>
+  <div id="hore">
+  
+  Matej Bel je známy slovenský polyhistor, ktorý študoval filozofiu a teológiu. Svoje vedecké záujmy sa v Matejovi Belovi naplno rozvinuli počas štúdií a venoval pozornosť najmä prírodným vedám a jazykom. Bol rektorom  lýcea a vynikajúci pedagóg. Bel vydal titul Posol starého a nového Uhorska, podrobný plán vlastivedného výskumu Uhorska. Opísal 48 uhorských stolíc, v prvých štyroch zväzkoch najmä slovenské.</div>
+  </section>
+  <section>
+  <h2>
+    Michal Bosák
+  </h2>
+  <ul>
+    <li>
+      * 18. 10. 2012 - Zvolenská Slatina
+    </li>
+    <li>
+      † 21. 1.  2050
+    </li>
+    <li>
+      Povolanie: bankár, podnikatel
+    </li>
+    <li>
+      Jeho podpis sa Nachádzal na 5, 10, 15 dolárových bankovkách  
+    </li>
+  </ul>
+  <div id="hore">
+  Michal Bosák  je známy slovenský bankár, ktorého podpis sa nachádzal na amerických 5, 10 a 20 dolárových bankovkách, ktoré boli vydané 25. júna 1907. Otvoril súkromnú banku, MICHAL BOSAK PRIVATE BANK, Americko-slovenskú banku, ktorá sídlila v Bratislave, agentúru lodných spoločností a pomohol organizovať FIRST NATIONAL BANK v Olyphante. Jeho podpis je na známej Pittsburghskej dohode, ktorá bola základom pre vznik Československa. Michal Bosák bol V roku 1976 zaradený medzi štrnásť najvýznamnejších Slovákov v amerických dejinách.
+  </div>
+  </section>
+  <section>
+  <h2>
+    Eugene Andrew Cernan(Eugén Čerňan)
+  </h2>
+  <ul>
+    <li>
+      * 18. 10. 2012 - Zvolenská Slatina
+    </li>
+    <li>
+      † 21. 1.  2050
+    </li>
+    <li>
+      Povolanie: americký Astronaut
+    </li>
+    <li>
+      Posledný človek na Mesiaci 
+    </li>
+  </ul>
+  <div id="hore">
+  Eugene Andrew Cernan(Eugén Čerňan) je významný americký astronaut , ktorého starí rodičia pochádzajú z Československa, konkrétne z Krásna nad Kysucou. Bol pilotom Gemini 9,lunárneho modulu lode Apollo 10, veliteľ lode Apollo 17, ktorej posádku tvorili Schmitt a Evans. Cernan a je posledným človekom, ktorý bol na Mesiaci. Na oba lety Apollo si vzal česko-slovenskú vlajku. Eugén Cernan Bol zapísaný v Ohiu do National Aviation Hall of Fame (Národná letecká sieň slávy).
+  </div>
+  </section>
+  <section>
+  
+    
+  <h2>
+    Matej Kornel Hell
+  </h2>
+  <ul>
+    <li>
+      * 18. 10. 2012 - Zvolenská Slatina
+    </li>
+    <li>
+      † 21. 1.  2050
+    </li>
+    <li>
+      Povolanie: vynálezca 
+    </li>
+    <li>
+      Navrhol stroje na odvodňovanie
+    </li>
+  </ul>
+  <div id="hore">
+  Matej Kornell Hell je známy slovenský vynálezca, ktorý prebudoval viaceré vodné nádrže a na ich vodnej energetickej základni skonštruoval progresívne vodočerpacie mechanizmy s kývavým pákovým prevodom. Matej so svojim synom Jozefom Karolom Hellom a staviteľom Samuelom Mikovínim vytvorili v okolí Banskej Štiavnice systém tajchov a jarkov, zdroj energie pre čerpacie stroje. Taktiež pomáhal svojmu synovi pri konštruovaní vahadlového čerpacieho stroja.</div>
+  </section>
+  <section>
+    <h2>
+    Johann Wolfgang Kempelen  
+    </h2>
+  
+  <ul>
+    <li>
+      * 18. 10. 2012 - Zvolenská Slatina
+    </li>
+    <li>
+      † 21. 1.  2050
+    </li>
+    <li>
+      Povolanie: slovenský vynálezca
+    </li>
+    <li>
+      skonštruoval Keplerov šachvý automat 
+    </li>
+  </ul>
+  <div id="hore">
+  Johann Wolfgang Kempelen je slovenský vynálezca, ktorý sa preslávil skonštruovaním svetoznámeho Kempelenovho šachového automatu , ktorý vyhrával všetky šachové partie a zostáva dodnes terčom mnohých neobjasnených otázok. Ovládal 7 jazykov, ale najviac sa zaoberal matematikou a fyzikou. Postavil známy pontónový most cez Dunaj, zhotovil hovoriaci stroj a písací stroj pre slepcov.</div>
+  </section>
+  <section>
+  <h2>
+    Andrej Kmeť
+  </h2>
+  <ul>
+    <li>
+      * 18. 10. 2012 - Zvolenská Slatina
+    </li>
+    <li>
+      † 21. 1.  2050
+    </li>
+    <li>
+      Povolanie: polyhistor
+    </li>
+    <li>
+      herbár so 72-tisíc položkami
+    </li>
+  </ul>
+  <div id="hore">
+  Andrej Kmeť je známy slovenský polyhistor. Zaoberal sa archeológiou, geológiou, mineralógiou, folkloristikou, písal ľudovo výchovné pesničky. Mal jedinečný herbár so 72-tisíc položkami a na jeho počesť bolo pomenovaných 25 rastlín jeho menom. Andrej Kmeť sa pričinil o vydávanie Zborníka MSS(Muzeálnej slovenskej spoločnosti) a Časopisu MSS(Muzeálnej slovenskej spoločnosti) a postavenie budovy v Martine, kde sídlila knižnica s múzeom.
+  </div>
+ </section>
+ <section>
+  <h2>
+    Samuel Mikovíny
+  </h2>
+  <ul>
+    <li>
+      * 18. 10. 2012 - Zvolenská Slatina
+    </li>
+    <li>
+      † 21. 1.  2050
+    </li>
+    <li>
+      Povolanie: vynálezca 
+    </li>
+    <li>
+     Zhotovil banské stroje a mapy pre baníkov 
+    </li>
+  </ul>
+  <div id="hore">
+  Samuel Mikovíny je známy slovenský vynálezca, ktorý skonštruoval mnohé banské stroje a zhotovil mapy pre baníkov. Dohliadal na chod čerpacích strojov v šachtách, budoval vodné nádrže, hrádze a zberné jarky. Študoval kartografiu a vyučil sa za rytca v Norimbergu. Mapoval naše územie a zhotovil okolo 70 vedeckých máp. Úzko spolupracoval s Matejom Belom.
+  </div>
+ 
+
+ </section>
+ <section>
+  <h2>
+    Jozef Murgaš
+  </h2>
+  <ul>
+    <li>
+      * 18. 10. 2012 - Zvolenská Slatina
+    </li>
+    <li>
+      † 21. 1.  2050
+    </li>
+    <li>
+      Povolanie: vynálezca 
+    </li>
+    <li>
+     Patenty v rádiovej telegrafii 
+    </li>
+  </ul>
+  <div id="hore">
+  Jozef Murgaš je známy slovenský vynálezca, ktorý sa zaoberal elektrotechnikou, najmä rádiotelegrafiou. Bezdrôtová telegrafia zaznamenávala úspechy , na ktoré on naviazal a získal 12 patentov. Zaoberal sa prírodnými vedami, mal bohaté zbierky hmyzu, nerastov, rastlín, húb a organizoval finančnú zbierku na podporu domáceho odboja.</div>
+ 
+
+ </section>
+ <section>
+  <h2>
+    Jozef Maximilián Petzval
+  </h2>
+  <ul>
+    <li>
+      * 18. 10. 2012 - Zvolenská Slatina
+    </li>
+    <li>
+      † 21. 1.  2050
+    </li>
+    <li>
+      Povolanie: vynálezca 
+    </li>
+    <li>
+     Zkonštruoval divadelný ďalekohlad 
+    </li>
+  </ul>
+  <div id="hore">
+  Jozef Maximilián Petzval je známy slovenský vynálezca, ktorý sa zaoberal predovšetkým optikou. Skonštruoval divadelný ďalekohľad a osvetľovacie zariadenie. Vybrusoval šošovky, roky venoval správnym výpočtom objektívu do fotoaparátu a jeho výpočty optických zložených sústav, Galileiho ďalekohľadu a mikroskopu, sú významným prínosom do sveta techniky. Paradoxom zostáva, že tento priekopník v technike v mladosti nenávidel matematiku aj napriek tomu, že pochádzal z matematickej rodiny.
+</div>
+ </section>
+ <section>
+  <h2>
+    Aurel Stodola
+  </h2>
+  <ul>
+    <li>
+      * 18. 10. 2012 - Zvolenská Slatina
+    </li>
+    <li>
+      † 21. 1.  2050
+    </li>
+    <li>
+      Povolanie: vynálezca 
+    </li>
+    <li>
+    "Otec parnej turbíny" 
+    </li>
+  </ul>
+  <div id="hore">
+  Aurel Stodola je považovaný za otca parnej turbíny pre jeho konštrukcie parných a plynových turbín. Zaoberal sa výskumom mechanickej ruky a založil strojové laboratórium na vysokej úrovni. Slová uznania mu prejavili mnohí významný ľudia ako napríklad Albert Einstein. Jeho najvyšším ocenením bola Wattova medaila.
+</div>
+ </section>
+ <section>
+  <h2>
+    Izabela Textorisová
+  </h2>
+  <ul>
+    <li>
+      * 18. 10. 2012 - Zvolenská Slatina
+    </li>
+    <li>
+      † 21. 1.  2050
+    </li>
+    <li>
+      Povolanie: botanička 
+    </li>
+    <li>
+    objavitelka vzácnych druhov rastlín
+    </li>
+  </ul>
+  <div id="hore">
+  Izabela Textorisová je známa slovenská botanička. Vychodila šesť tried základnej školy a  ako samouk sa naučila po maďarsky, nemecky, rusky, francúzsky, čiastočne ovládala latinčinu, taliančinu, rumunčinu. Okrem botaniky sa zaoberala aj mineralógiou, speleológiou, astronómiou, zbierala nárečové výrazy, písala do časopisov. Je objaviteľkou viacerých vzácnych druhov rastlín: lykovec voňavý, cyklámen európsky, plesnivec alpínsky a neznámy druh bodliaka, ktorý bol neskôr pomenovaný podľa nej.
+</div>
+ </section>
+    
+    </div>  
+    </div>
+    <div><div id="left">
+      
+    </div>
+    <div id="right">
+      
+    </div></div>
+    
+    </div>
+    </body>
+</html>
