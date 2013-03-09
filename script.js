@@ -1,7 +1,7 @@
 /*JAVASCRIPT*/
 obrazky=Array();//aktuálne odkazy
 last=null;//posledný- oznacenie
-$.ready=function(){
+$(document).ready(function(){
 pole=document.getElementsByTagName("section");
 for (i=0;i<pole.length;i++)
 {y=pole[i].onclick=function(){
@@ -33,7 +33,7 @@ last=this;
 }
 y(pole[0]);
 
-}
+})
 
 
 
