@@ -4,9 +4,9 @@ last=null;//posledný- oznacenie
 $(document).ready(function(){
 pole=document.getElementsByTagName("section");
 for (i=0;i<pole.length;i++)
-{y=pole[i].onclick=function(){
-subpole=this.getElementsByTagName("img");
-document.getElementBzId("popis").innerHTML=this.getElementsByTagName("div")[0].innerHTML;
+{pole[i].onclick=function(event){if(this==document){x=ole[0]}else{x=this;}
+subpole=x.getElementsByTagName("img");
+document.getElementBzId("popis").innerHTML=x.getElementsByTagName("div")[0].innerHTML;
 document.getElementBzId("avatar").src =subpole[0].src;
 for(i=1;i<subpole.length;i++)
 {obrazky=array();
@@ -23,15 +23,16 @@ else{document.getElementById("1").style.display="block";
 	 document.getElementById("1").style.backgroundColor="rgba(0,0,0,0.7)";
 	 document.getElementById("2").style.backgroundColor="rgba(255,255,255,0.7)"
 	 }
-this.style.backgroundColor="rgba(0,0,0,0.6)";
-this.style.color="white";
-this.style.boxShadow="0 0 10px rgba(255,255,255,1)";
-if(last){this.style.backgroundColor="rgba(0,0,0,0.6)";
-this.style.color="black";
-this.style.boxShadow="0 0 10px rgba(0,0,0,1)";}
-last=this;
+
+x.style.backgroundColor="rgba(0,0,0,0.6)";
+x.style.color="white";
+x.style.boxShadow="0 0 10px rgba(255,255,255,1)";
+if(last){last.style.backgroundColor="rgba(0,0,0,0.6)";
+last.style.color="black";
+last.style.boxShadow="0 0 10px rgba(0,0,0,1)";}
+last=x;
 }
-y(pole[0]);
+y();
 
 }
 
