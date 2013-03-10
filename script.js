@@ -39,12 +39,12 @@ x.style.boxShadow="0 0 10px rgba(255,255,255,1)";
 }
 y();
 document.getElementById("1").onmouseover=function(){
-document.getElementById("obrazok").src=obrazky[0];
+document.getElementById("obrazok").src=obrazky[0].src;
 document.getElementById("1").style.backgroundColor="rgba(0,0,0,0.7)";
 	 document.getElementById("2").style.backgroundColor="rgba(255,255,255,0.7)";
 }
 document.getElementById("2").onmouseover=function(){
-document.getElementById("obrazok").src=obrazky[1];
+document.getElementById("obrazok").src=obrazky[1].src;
 document.getElementById("2").style.backgroundColor="rgba(0,0,0,0.7)";
 	 document.getElementById("1").style.backgroundColor="rgba(255,255,255,0.7)";
 }
