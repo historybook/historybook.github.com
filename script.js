@@ -7,9 +7,9 @@ for (i=0;i<pole.length;i++)
 {y=pole[i].onclick=function(event){if(this==window){x=pole[0]}else{x=this;}
 subpole=x.getElementsByTagName("img");
 document.getElementById("popis").innerHTML=x.getElementsByTagName("div")[0].innerHTML;
-document.getElementById("avatar").src =subpole[0].src;
+document.getElementById("avatar").src =subpole[0].src;obrazky=Array();
 for(z=1;z<subpole.length;z++)
-{obrazky=Array();
+{
 obrazky.push(subpole[z]);
 }
 if (subpole.length<2){document.getElementById("obrazok").src="http://historybook.github.com/bez.png";
