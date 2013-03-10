@@ -25,14 +25,14 @@ else{document.getElementById("1").style.display="block";
 	 document.getElementById("1").style.backgroundColor="rgba(0,0,0,0.7)";
 	 document.getElementById("2").style.backgroundColor="rgba(255,255,255,0.7)";
 	 }
-
-x.style.backgroundColor="rgba(0,0,0,0.6)";
-x.style.color="white";
-x.style.boxShadow="0 0 10px rgba(255,255,255,1)";
 if(last){last.style.backgroundColor="rgba(0,0,0,0.6)";
 last.style.color="black";
 last.style.boxShadow="0 0 10px rgba(0,0,0,1)";}
 last=x;
+x.style.backgroundColor="rgba(0,0,0,0.6)";
+x.style.color="white";
+x.style.boxShadow="0 0 10px rgba(255,255,255,1)";
+
 }
 y();
 
