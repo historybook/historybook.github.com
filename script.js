@@ -1,6 +1,7 @@
 /*JAVASCRIPT*/
 obrazky=Array();//aktuálne odkazy
 last=null;//posledný- oznacenie
+position=0;//posun *904
 $(document).ready(function(){
 pole=document.getElementsByTagName("section");
 for (i=0;i<pole.length;i++)
@@ -51,11 +52,10 @@ document.getElementById("2").style.backgroundColor="rgba(0,0,0,0.7)";
 
 document.getElementById("right").onclick=document.getElementById("left").onclick=function(){
 	var x =this==document.getElementById("right") ? "-":"+";
-	position=parseInt($(document.getElementById("move")).css("margin-left"));
-	if(x=="+" && position==0 ){document.getElementById("move").style.marginLeft="-2712px";}
-	else if(x=="-" && position==-2712 ){document.getElementById("move").style.marginLeft="0px";}
-	else if(x=="+"){document.getElementById("move").style.marginLeft=(position+904)+"px";}
-	else{document.getElementById("move").style.marginLeft=(position-904)+"px";}}
+	if(x=="+" && position==0 ){document.getElementById("move").style.marginLeft="-2712px";position=3;}
+	else if(x=="-" && position==3 ){document.getElementById("move").style.marginLeft="0px";position=0;}
+	else if(x=="+"){position-=1;document.getElementById("move").style.marginLeft=(position*(-904))+"px";}
+	else{position+=1;document.getElementById("move").style.marginLeft=(position*(-904))+"px";}}
 
 
 });
