@@ -47,7 +47,7 @@
        
        .imagebox +div,.fixed + div{position:relative;}
        .avatar div:first-child{padding:20px 27px;background-color:rgba(0,0,0,0.5);border-radius:10px 0 0 0;}
-       .avatar div.x {height:0;width:0px;
+       .avatar div.x {height:0;width:0px;overflow:visible;
                       border-bottom: 150px solid transparent;
                       border-right:207px solid rgba(0,0,0,0.5);  }
         #popis{background-color:rgba(0,0,0,0.6);
@@ -121,6 +121,7 @@
         .gulicka1:hover{background-color:rgba(140,140,140,0.7);}
         .gulicka2:hover{background-color:rgba(140,140,140,0.7);}
         .spodok{width:887px;height:100px;position:absolute;bottom:0;left:0px}
+        .facebooklike{position:absolute;}
       
     </style><script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="script.js"></script>
@@ -132,7 +133,8 @@
       <div>
         <img id="avatar" src="http://historybook.github.com/avatar.jpg">
       </div>
-      <div class="x">        
+      <div class="x">
+      <iframe class="facebooklike" src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fhistorybook.github.com%2F&amp;send=false&amp;layout=box_count&amp;width=450&amp;show_faces=true&amp;font=arial&amp;colorscheme=dark&amp;action=like&amp;height=90&amp;appId=206946562724226" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:90px;" allowTransparency="true"></iframe>
       </div>
       
     </div>
