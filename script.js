@@ -18,10 +18,10 @@ if (subpole.length<2){document.getElementById("obrazok").src="http://historybook
 else if(subpole.length<3){
 					document.getElementById("1").style.display="none";
 					document.getElementById("2").style.display="none";
-					document.getElementById("obrazok").src=obrazky[1];}
+					document.getElementById("obrazok").src=obrazky[0].src;}
 else{document.getElementById("1").style.display="block";
      document.getElementById("2").style.display="block";
-	 document.getElementById("obrazok").src=obrazky[0];
+	 document.getElementById("obrazok").src=obrazky[0].src;
 	 document.getElementById("1").style.backgroundColor="rgba(0,0,0,0.7)";
 	 document.getElementById("2").style.backgroundColor="rgba(255,255,255,0.7)";
 	 }
