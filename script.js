@@ -12,10 +12,10 @@ for(z=1;z<subpole.length;z++)
 {obrazky=Array();
 obrazky.push(subpole[z]);
 }
-if (subpole<2){document.getElementById("obrazok").src="http://historybook.github.com/bez.png";
+if (subpole.length<2){document.getElementById("obrazok").src="http://historybook.github.com/bez.png";
 				document.getElementById("1").style.display="none";
 					document.getElementById("2").style.display="none";}
-else if(subpole<3){
+else if(subpole.length<3){
 					document.getElementById("1").style.display="none";
 					document.getElementById("2").style.display="none";
 					document.getElementById("obrazok").src=obrazky[1];}
