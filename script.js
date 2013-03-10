@@ -34,9 +34,10 @@ x.style.color="white";
 x.style.boxShadow="0 0 10px rgba(255,255,255,1)";
 
 }
-y();
+
 
 }
+y();
 document.getElementById("1").onmouseover=function(){
 document.getElementById("obrazok").src=obrazky[0];
 document.getElementById("1").style.backgroundColor="rgba(0,0,0,0.7)";
