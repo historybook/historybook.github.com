@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=PCSX
+Comment=PCSX Playstation emulator compiled for RK3066 with GLES support.
+Exec=/home/picuntu/homeio-extras/pcsx_rearmed/pcsx
+Icon=/usr/share/icons/playstation.png
+Path=/home/picuntu/homeio-extras/pcsx_rearmed/
+Terminal=false
+StartupNotify=false
